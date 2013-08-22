@@ -1,8 +1,6 @@
-markdown: rdiscount
+markdown: redcarpet
 pygments: true
 permalink: /posts/:title
-rdiscount:
-  extensions: [smart]
 title : Juan P. Schwindt
 production_url : http://www.schwindt.org
 description: "Hackeando Ruby desde Buenos Aires, Argentina"
