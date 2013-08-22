@@ -8,7 +8,6 @@ production_url : http://www.schwindt.org
 description: "Hackeando Ruby desde Buenos Aires, Argentina"
 disqus_shortname: jschwindtblog
 analytics: UA-4532575-1
-gauges: false
 author :
   name : Juan Schwindt
   github : jschwindt
