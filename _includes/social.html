@@ -1,0 +1,14 @@
+<meta name="twitter:card" value="summary">
+<meta name="twitter:creator" content="@jschwindt">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="og:title" content="{{ page.title }}" />
+<meta name="og:url" content="{{ site.production_url }}{{ page.url }}" />
+<meta property="og:type" content="article" />
+{% if page.og.description %}
+<meta name="twitter:description" content="{{ page.og.description }}">
+<meta name="og:description" content="{{ page.og.description }}" />
+{% endif %}
+{% if page.og.image %}
+<meta name="twitter:image" content="{{ site.production_url }}{{ page.og.image }}">
+<meta name="og:image" content="{{ site.production_url }}{{ page.og.image }}" />
+{% endif %}

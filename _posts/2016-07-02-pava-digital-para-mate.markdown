@@ -2,6 +2,9 @@
 layout: post
 title: "Pava digital para mate"
 category: electrónica
+og:
+  description: "Reemplazo del termostato mecánico por un microcontrolador ATtiny85 a una pava eléctrica"
+  image: "/image/pava-mate-digital.png"
 ---
 
 ## Motivación
