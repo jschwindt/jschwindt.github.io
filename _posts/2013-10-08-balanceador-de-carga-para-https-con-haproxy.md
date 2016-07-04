@@ -10,6 +10,8 @@ Cuando se trata de balancear la carga HTTP me gusta utilizar HAProxy ya que es m
 
 ## Certificado SSL/TLS gratuito
 
+**Actualización 2016:** Hoy en día conviene utilizar [Let’s Encrypt](https://letsencrypt.org/).
+
 El sitio [StartSSL](http://www.startssl.com/) emite certificados SSL/TLS legítimos y gratuitos (clase 1), pero el proceso para poder utilizarlos correctamente en el servidor web o en el balanceador de carga tiene sus vueltas y me llevó un tiempo hasta que logré hacerlo funcionar correctamente.
 
 Primero hay que registrarse en el sitio e instalar un certificado en el navegador. Ese certificado es el que nos permite luego ingresar al panel de control y gestionar todo lo necesario para obtener el certificado final. Una vez adentro, los pasos son los siguientes:
@@ -41,7 +43,7 @@ frontend web
   bind 0.0.0.0:80
   bind 0.0.0.0:443 ssl crt /etc/haproxy/certs/ssl.full.crt
 ```
-    
+
 donde `ssl.full.crt` es el certificado que armamos en el apartado anterior. El resto de las directivas son las usuales para este tipo de utilización. Aquí se puede ver un ejemplo completo de la configuración: [https://gist.github.com/jschwindt/6902596](https://gist.github.com/jschwindt/6902596)
 
 Finalmente, una vez que el HAProxy está corriendo es importante probar que toda la cadena de certificados y la compatibilidad con los distintos navegadores esté funcionando correctamente. Para eso hay varias herramientas online, por ejemplo: [http://www.sslshopper.com/ssl-checker.html](http://www.sslshopper.com/ssl-checker.html). Un problema que tuve durante las pruebas es que con Firefox aparecía un error de certificados y eso se debía a que dentro del certificado final faltaba el de la autoridad certificante intermedia, cosa que no se manifestaba con el resto de los navegadores.
