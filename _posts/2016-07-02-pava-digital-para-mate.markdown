@@ -33,7 +33,7 @@ Así quedó el termistor dentro del espacio del viejo termostato:
 ## El circuito y el armado con el ATtiny85
 
 El circuito definitivo es muy sencillo ya que el microcontrolador no necesita ningún componente externo para funcionar:
-![Circuito de la pava para mate](../images/pava-mate-digital.png){:width="480px"}
+[![Circuito de la pava para mate](../images/pava-mate-digital.png){:width="640px"}](http://www.schematics.com/project/digital-pava-35838/){:target="_blank"}
 
 Esta es la plaquetita terminada:
 ![Plaqueta terminada](../images/placa.jpg){:width="480px"}
