@@ -54,7 +54,7 @@ los 60ºC. A partir de ahí comienzan ciclos de 10 segundos de espera (para que 
 
 El LED se utiliza para saber en qué parte del ciclo se encuentra: si está encendido en forma permanente significa que el
 agua se encuentra lista para preparar el mate. Si estamos en el proceso de calentamiento, el LED titila con una velocidad
-variable y se acelera a medida que nos acercamos a los 85ºC. El código lo publiqué en Github: [código fuente de la pava](https://github.com/jschwindt/PavaMateDigital/blob/master/PavaMate.ino){:target="_blank"}.
+variable y se acelera a medida que nos acercamos a los 85ºC. El código lo publiqué en Github: [código fuente de la pava](https://github.com/jschwindt/PavaMateDigital/blob/master/src/PavaMate.cpp){:target="_blank"}.
 
 Durante el desarrollo usé un Arduino Uno ya que de esa forma podía usar la interfaz serie para enviar mensajes de debug y de esa forma acelerar el proceso. Luego, cuando llegó el momento de programar definitivamente el ATtiny85, seguí las instrucciones
 de estos tutoriales [Video: How to make a DIY ATtiny Programmer](https://www.youtube.com/watch?v=BexXvxmOGN8){:target="_blank"} y [Programming an ATtiny w/ Arduino 1.6](http://highlowtech.org/?p=1695){:target="_blank"}.
