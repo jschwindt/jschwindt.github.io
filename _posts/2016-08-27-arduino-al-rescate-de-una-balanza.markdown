@@ -4,7 +4,7 @@ title: "Arduino al rescate de una balanza"
 category: electrónica
 og:
   description: "Desarrollo a nuevo de una balanza de cocina que súbitamente dejó de funcionar"
-  image: "/images/promini.jpg"
+  image: "/images/balanza-terminada.jpg"
 ---
 
 ## Motivación
@@ -57,7 +57,7 @@ La alimentación del circuito se realiza mediante una fuente externa de 5V, que 
 
 El soft es una clásica aplicación Arduino son su setup() y loop(), aunque decidí usar una interrupción
 de timer para el multiplexado de los segmentos y dígitos. No conocía mucho del manejo de los registros
-de los timers del microcontrolador, pero encontré un [buen artículo en www.instructables.com](http://www.instructables.com/id/Arduino-Timer-Interrupts/) con todo lo que necesitaba. La interrición de tiempo se genera cada 512 microsegundos y en ella lo que se hace es apagar el segmentosque estaba encendido, calcular cuál es el próximo segmento y encenderlo, para lo cual hay que poner HIGH
+de los timers del microcontrolador, pero encontré un [buen artículo en www.instructables.com](http://www.instructables.com/id/Arduino-Timer-Interrupts/){:target="_blank" rel="noopener noreferrer"} con todo lo que necesitaba. La interrición de tiempo se genera cada 512 microsegundos y en ella lo que se hace es apagar el segmento que estaba encendido, calcular cuál es el próximo segmento y encenderlo, para lo cual hay que poner HIGH
 en el ánodo del display correspondiente y LOW en el segmento. El ciclo completo dura 28 * 0.512 = 14 milisegundos, lo
 que da una buena frecuencia de refresco.
 
