@@ -16,7 +16,7 @@ Arduino en un proyecto concreto de "digitalizar" la pava.
 
 ## El sensor de temperatura
 
-La primera idea fue usar el [LM335](http://www.ti.com/lit/ds/symlink/lm235.pdf){:target="_blank"} ya que tenía uno a mano. Este
+La primera idea fue usar el [LM335](http://www.ti.com/lit/ds/symlink/lm235.pdf){:target="_blank" rel="noopener noreferrer"} ya que tenía uno a mano. Este
 sensor entrega 10mV por ºK, es decir que para el rango de 10 a 90ºC del agua, la tensión que entrega es de
 2,83 a 3,63V, es decir menos de 1V de variación, y como la idea es utilizar el ADC del Arduino, que mide de 0 a 5V, se
 desperdiciaría el 80% del rango de conversión. Otro problema es que al tener un encapsulado plástico, el
@@ -24,7 +24,7 @@ contacto térmico y la inercia térmica complicaban el control.
 
 Finalmente me sugirieron utilizar un NTC 100K a 25ºC con encapsulado en vidrio, que se usa en las impresoras 3D
 y es muy barato. Con esto es muy fácil regular el rango de tensión cambiando la resistencia del divisor, la que
-quedó en 22K. La respuesta del divisor de tensión no es lineal ([ver tabla de resistencia del NTC](/images/tabla-ntc-100k.png){:target="_blank"}), pero para el uso como termostato eso no es importante.
+quedó en 22K. La respuesta del divisor de tensión no es lineal ([ver tabla de resistencia del NTC](/images/tabla-ntc-100k.png){:target="_blank" rel="noopener noreferrer"}), pero para el uso como termostato eso no es importante.
 
 Así quedó el termistor dentro del espacio del viejo termostato:
 
@@ -33,7 +33,7 @@ Así quedó el termistor dentro del espacio del viejo termostato:
 ## El circuito y el armado con el ATtiny85
 
 El circuito definitivo es muy sencillo ya que el microcontrolador no necesita ningún componente externo para funcionar:
-[![Circuito de la pava para mate](../images/pava-mate-digital.png){:width="640px"}](http://www.schematics.com/project/digital-pava-35838/){:target="_blank"}
+[![Circuito de la pava para mate](../images/pava-mate-digital.png){:width="640px"}](http://www.schematics.com/project/digital-pava-35838/){:target="_blank" rel="noopener noreferrer"}
 
 Esta es la plaquetita terminada:
 ![Plaqueta terminada](../images/placa.jpg){:width="480px"}
@@ -54,10 +54,10 @@ los 60ºC. A partir de ahí comienzan ciclos de 10 segundos de espera (para que 
 
 El LED se utiliza para saber en qué parte del ciclo se encuentra: si está encendido en forma permanente significa que el
 agua se encuentra lista para preparar el mate. Si estamos en el proceso de calentamiento, el LED titila con una velocidad
-variable y se acelera a medida que nos acercamos a los 85ºC. El código lo publiqué en Github: [código fuente de la pava](https://github.com/jschwindt/PavaMateDigital/blob/master/src/PavaMate.cpp){:target="_blank"}.
+variable y se acelera a medida que nos acercamos a los 85ºC. El código lo publiqué en Github: [código fuente de la pava](https://github.com/jschwindt/PavaMateDigital/blob/master/src/PavaMate.cpp){:target="_blank" rel="noopener noreferrer"}.
 
 Durante el desarrollo usé un Arduino Uno ya que de esa forma podía usar la interfaz serie para enviar mensajes de debug y de esa forma acelerar el proceso. Luego, cuando llegó el momento de programar definitivamente el ATtiny85, seguí las instrucciones
-de estos tutoriales [Video: How to make a DIY ATtiny Programmer](https://www.youtube.com/watch?v=BexXvxmOGN8){:target="_blank"} y [Programming an ATtiny w/ Arduino 1.6](http://highlowtech.org/?p=1695){:target="_blank"}.
+de estos tutoriales [Video: How to make a DIY ATtiny Programmer](https://www.youtube.com/watch?v=BexXvxmOGN8){:target="_blank" rel="noopener noreferrer"} y [Programming an ATtiny w/ Arduino 1.6](http://highlowtech.org/?p=1695){:target="_blank" rel="noopener noreferrer"}.
 
 La pava "electrónica" terminada:
 
