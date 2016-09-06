@@ -14,7 +14,7 @@ dejó de funcionar al poco tiempo de uso, simplemente encendía y quedaba siempr
 para ver si se podía hacer algo, pero a simple vista no había nada que pareciera estar mal, y como se trataba de
 un típico [chip-on-board](https://en.wikipedia.org/wiki/Electronic_packaging#/media/File:Famicom_clone_PCB.jpg){:target="_blank" rel="noopener noreferrer"} las chances de repararla eran nulas.
 
-De los elementos que formaban la balanza, lo único que podía ser útil era el sensor de peso o "strength gage",
+De los elementos que formaban la balanza, lo único que podía ser útil era el sensor de peso o "strain gauge",
 así que me propuse diseñar una balanza nueva.
 
 ## El sensor de peso
