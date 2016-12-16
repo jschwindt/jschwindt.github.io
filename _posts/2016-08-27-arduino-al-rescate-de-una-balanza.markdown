@@ -29,7 +29,7 @@ y además convierten de analógico a digital. La forma de conectarlo es la sigui
 También, gracias a la magia del código abierto, existe un [módulo de software](https://github.com/bogde/HX711){:target="_blank" rel="noopener noreferrer"} para Arduino para comunicarse
 con el HX711 y leer el dato del peso.
 
-## Arduino Por Mini y el display
+## Arduino Pro Mini y el display
 
 Para este proyecto necesitaba muchas puertas de I/O: 11 salidas para manejar los 4 dígitos del display de 7
 segmentos que muestra el peso, 2 para clock y datos del HX711 y una entrada leer la tecla de puesta a cero (tara).
